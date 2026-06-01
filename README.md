@@ -12,6 +12,19 @@ chaque prédiction.
 
 ---
 
+## Pipeline du projet
+
+1. Chargement des données
+2. Analyse exploratoire
+3. Feature Engineering
+4. Gestion du déséquilibre
+5. Entraînement des modèles
+6. Optimisation Optuna
+7. Calibration
+8. SHAP
+
+---
+
 ## Données
 
 Le dataset est le **Credit Card Fraud Detection** publié par le groupe de recherche
@@ -254,3 +267,23 @@ shap >= 0.45
 statsmodels >= 0.14
 numpy · pandas · matplotlib · seaborn
 ```
+
+---
+
+## Conclusion
+
+Parmi les cinq configurations évaluées, XGBoost avec Focal Loss est la méthode la plus performante pour la détection de fraude en contexte fortement déséquilibré. La combinaison de l'optimisation bayésienne, de la calibration des probabilités et de l'interprétabilité SHAP permet d'obtenir un système performant, fiable et explicable.
+
+---
+
+## Auteurs
+
+- Maroua El Barnaoui
+- Houda El Jirari
+
+Master SDIA
+ENSET Mohammedia
+Université Hassan II Casablanca
+
+Encadrante :
+Pr. Asmae Ouhmida
