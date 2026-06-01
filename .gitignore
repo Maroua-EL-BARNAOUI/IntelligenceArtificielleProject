@@ -1,0 +1,57 @@
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Environnements virtuels ───────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── Données sensibles (ne jamais committer le CSV brut) ───────────────────
+data/*.csv
+data/*.parquet
+data/*.feather
+# Pour utiliser le dataset : télécharger depuis Kaggle
+# https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+# ── Modèles sérialisés ────────────────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+models/*.json
+models/*.ubj
+
+# ── Fichiers numpy intermédiaires ─────────────────────────────────────────
+*.npy
+*.npz
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Figures (optionnel — décommenter si on ne veut pas versionner) ────────
+# figures/*.png
+
+# ── IDEs ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ── OS ────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Divers ────────────────────────────────────────────────────────────────
+*.log
+.cache/
+.pytest_cache/
+htmlcov/
+.coverage
